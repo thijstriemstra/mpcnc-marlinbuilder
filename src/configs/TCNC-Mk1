@@ -1,0 +1,37 @@
+#!/bin/bash
+
+set -e
+
+restore_configs
+
+export V1_VERSION=${V1_VERSION}D
+
+$CFGDIR/common/v1-base-config
+$CFGDIR/common/cnc-config
+$CFGDIR/boards/ramps
+$CFGDIR/accessories/reprap_discount_full_graphic_lcd
+$CFGDIR/accessories/dual-drivers-on-xy
+$CFGDIR/boards/ramps_dual
+$CFGDIR/accessories/laser
+$CFGDIR/accessories/max7219-debug
+
+# using MKS Gen L v1.0 board
+opt_set MOTHERBOARD "BOARD_MKS_GEN_L"
+
+# Printer's unique ID, used by some programs to differentiate between machines.
+opt_set MACHINE_UUID "742a7044-3d5c-4f02-82a0-173189d55878"
+
+opt_enable \
+    EMERGENCY_PARSER \
+    REALTIME_REPORTING_COMMANDS \
+    FULL_REPORT_TO_HOST_FEATURE \
+    HOST_ACTION_COMMANDS
+
+# DRV8825 drivers for all steppers
+opt_set X_DRIVER_TYPE "DRV8825"
+opt_set Y_DRIVER_TYPE "DRV8825"
+opt_set Z_DRIVER_TYPE "DRV8825"
+opt_set X2_DRIVER_TYPE "DRV8825"
+opt_set Y2_DRIVER_TYPE "DRV8825"
+
+export PLATFORMIO_ENV=mega2560
