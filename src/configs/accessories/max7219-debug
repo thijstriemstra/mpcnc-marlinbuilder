@@ -6,3 +6,6 @@ opt_set MAX7219_CLK_PIN AUX2_06_PIN
 opt_set MAX7219_DIN_PIN AUX2_04_PIN
 opt_set MAX7219_LOAD_PIN AUX2_03_PIN
 opt_set MAX7219_ROTATE 0
+
+# Write some useful tidbits to the readme.
+echo "- Configured for MAX7219" >> README.md
