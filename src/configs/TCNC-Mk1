@@ -19,7 +19,7 @@ $CFGDIR/accessories/max7219-debug
 opt_set MOTHERBOARD "BOARD_MKS_GEN_L"
 
 # Printer's unique ID, used by some programs to differentiate between machines.
-opt_set MACHINE_UUID "742a7044-3d5c-4f02-82a0-173189d55878"
+opt_set MACHINE_UUID "\"742a7044-3d5c-4f02-82a0-173189d55878\""
 
 opt_enable \
     EMERGENCY_PARSER \
