@@ -14,3 +14,9 @@ platformio run --project-dir . --silent "$@"
 
 # Copy the output file out here, so we can save it as an artifact
 cp .pio/build/*/firmware.[bh]* ../
+
+# Flash the firmware
+export port=/dev/mksgenlv1
+
+platformio run --project-dir . --upload-port ${port} --monitor-port ${port} --target upload -e mega2560
+
