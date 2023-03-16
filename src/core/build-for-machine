@@ -10,7 +10,7 @@ set -ex
 cd "$MARLINDIR"
 
 ## Build
-platformio run --project-dir . --silent "$@"
+platformio run --project-dir . "$@"
 
 # Copy the output file out here, so we can save it as an artifact
 cp .pio/build/*/firmware.[bh]* ../
