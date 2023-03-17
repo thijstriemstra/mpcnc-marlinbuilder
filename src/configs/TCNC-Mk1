@@ -20,6 +20,9 @@ opt_set MOTHERBOARD "BOARD_MKS_GEN_L"
 # Printer's unique ID, used by some programs to differentiate between machines.
 opt_set MACHINE_UUID "\"742a7044-3d5c-4f02-82a0-173189d55878\""
 
+opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 400 }"
+opt_set DEFAULT_MAX_FEEDRATE "{ 50, 50, 4 }"
+
 opt_enable \
     EMERGENCY_PARSER \
     REALTIME_REPORTING_COMMANDS \
