@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## Script Setup
+
+set -ex
+. $(dirname "$0")/env
+. $(dirname "$0")/version
+
+## Move to Marlin Dir
+cd "$MARLINDIR"
+
+# Flash the firmware
+export port=/dev/octopus
+
+platformio run --project-dir . --upload-port ${port} --monitor-port ${port} --target upload -e STM32F446ZE_btt
+
