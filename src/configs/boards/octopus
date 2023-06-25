@@ -4,4 +4,4 @@ opt_set MOTHERBOARD "BOARD_BTT_OCTOPUS_V1_1"
 # Use native USB serial
 opt_set SERIAL_PORT -1
 
-echo "- Configured for Octopus" >> README.md
+echo "- Configured for Octopus v1.1 (STM32F446ZE)" >> README.md

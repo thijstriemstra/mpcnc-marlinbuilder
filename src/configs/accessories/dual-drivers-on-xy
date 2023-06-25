@@ -5,11 +5,14 @@ opt_set MANUAL_FEEDRATE "{ 50*60, 50*60, 4*60 }"
 opt_set AXIS_RELATIVE_MODES "{ false, false, false }"
 
 
+# Apparently the following "USE_*_PLUG settings are no longer needed and should be removed."
+# See https://github.com/MarlinFirmware/Marlin/blob/bugfix-2.1.x/Marlin/src/inc/Changes.h#L651
+#    USE_XMAX_PLUG \
+#    USE_YMAX_PLUG \
+
 opt_enable \
     MIN_SOFTWARE_ENDSTOPS \
     SOFT_ENDSTOPS_MENU_ITEM \
-    USE_XMAX_PLUG \
-    USE_YMAX_PLUG \
     INVERT_X2_VS_X_DIR \
     X_DUAL_ENDSTOPS \
     INVERT_Y2_VS_Y_DIR \

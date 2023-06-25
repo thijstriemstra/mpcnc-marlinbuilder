@@ -26,24 +26,4 @@ opt_enable \
     REALTIME_REPORTING_COMMANDS \
     HOST_ACTION_COMMANDS
 
-# TMC2209 drivers for all steppers
-opt_set X_DRIVER_TYPE "TMC2209"
-opt_set Y_DRIVER_TYPE "TMC2209"
-opt_set Z_DRIVER_TYPE "TMC2209"
-opt_set X2_DRIVER_TYPE "TMC2209"
-opt_set Y2_DRIVER_TYPE "TMC2209"
-
-# TMC Settings
-opt_set HOLD_MULTIPLIER 0.8
-opt_set X_CURRENT  725
-opt_set Y_CURRENT  725
-opt_set Z_CURRENT  650
-opt_set X2_CURRENT 650
-opt_set Y2_CURRENT 650
-
-opt_enable \
-    STEALTHCHOP_XY \
-    STEALTHCHOP_Z \
-    STEALTHCHOP_E
-
 export PLATFORMIO_ENV=STM32F446ZE_btt
