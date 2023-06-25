@@ -1,5 +1,5 @@
 
-opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK1 2.1\""
+opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK2 2.1\""
 
 opt_set Z_MIN_ENDSTOP_HIT_STATE "HIGH"
 opt_set Z_MIN_PROBE_ENDSTOP_HIT_STATE "LOW"
@@ -39,7 +39,7 @@ opt_enable \
 opt_disable \
     MIN_SOFTWARE_ENDSTOP_Z \
     MAX_SOFTWARE_ENDSTOPS
-    
+
 # Write some useful tidbits to the readme.
 echo "- Configured for CNC" >> README.md
 echo "- Custom LCD commands" >> README.md

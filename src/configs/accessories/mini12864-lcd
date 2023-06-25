@@ -1,0 +1,9 @@
+opt_enable \
+    SDSUPPORT \
+    MINIPANEL \
+    REVERSE_ENCODER_DIRECTION \
+    SPEAKER \
+    SOUND_MENU_ITEM
+
+echo "- Configured for MINI12864 display" >> README.md
+echo "- Configured for SDSUPPORT and SPEAKER" >> README.md

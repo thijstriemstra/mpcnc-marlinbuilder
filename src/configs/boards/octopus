@@ -1,0 +1,4 @@
+# using BigTreeTech Octopus v1.1 (STM32F446ZE) board
+opt_set MOTHERBOARD "BOARD_BTT_OCTOPUS_V1_1"
+
+echo "- Configured for Octopus" >> README.md

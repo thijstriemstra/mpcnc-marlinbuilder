@@ -1,4 +1,4 @@
 #!/bin/bash
 
-src/core/config-for-machine TCNC-Mk1
+src/core/config-for-machine TCNC-Mk2
 
