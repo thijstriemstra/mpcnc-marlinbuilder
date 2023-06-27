@@ -10,7 +10,9 @@ opt_enable \
     LED_COLOR_PRESETS \
     LED_USER_PRESET_STARTUP
 
+# builtin Neopixel below rotary encoder
 opt_set NEOPIXEL_TYPE "NEO_RGB"
+#opt_set NEOPIXEL_PIN PE13
 opt_set NEOPIXEL_PIXELS 3
 opt_set NEOPIXEL_BRIGHTNESS 255
 
