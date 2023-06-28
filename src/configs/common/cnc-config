@@ -24,6 +24,12 @@ opt_set MAIN_MENU_ITEM_2_GCODE "\"G28 Z\""
 opt_set MAIN_MENU_ITEM_3_DESC "\"Home X\&Y\""
 opt_set MAIN_MENU_ITEM_3_GCODE "\"G28 X Y\""
 
+# show fake temperature for non-existing bed
+opt_set TEMP_SENSOR_BED 998
+
+# 0 extruders
+opt_set EXTRUDERS 0
+
 opt_enable \
     EEPROM_SETTINGS \
     S_CURVE_ACCELERATION \
@@ -43,4 +49,3 @@ opt_disable \
 # Write some useful tidbits to the readme.
 echo "- Configured for CNC" >> README.md
 echo "- Custom LCD commands" >> README.md
-
