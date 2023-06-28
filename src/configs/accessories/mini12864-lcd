@@ -1,7 +1,6 @@
 opt_enable \
     SDSUPPORT \
     BTT_MINI_12864_V1 \
-    REVERSE_ENCODER_DIRECTION \
     SPEAKER \
     SOUND_MENU_ITEM \
     NEOPIXEL_LED \
@@ -15,6 +14,9 @@ opt_set NEOPIXEL_TYPE "NEO_RGB"
 #opt_set NEOPIXEL_PIN PE13
 opt_set NEOPIXEL_PIXELS 3
 opt_set NEOPIXEL_BRIGHTNESS 255
+
+# secondary Neopixels
+
 
 echo "- Configured for MINI12864 display" >> README.md
 echo "- Configured for SDSUPPORT and SPEAKER" >> README.md
