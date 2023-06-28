@@ -1,4 +1,3 @@
-opt_set EXTRUDERS "0"
 opt_set DEFAULT_MAX_FEEDRATE "{ 50, 50, 15 }"
 opt_set DEFAULT_MAX_ACCELERATION "{ 180, 180, 80 }"
 opt_set MANUAL_FEEDRATE "{ 50*60, 50*60, 4*60 }"
@@ -16,6 +15,7 @@ opt_enable \
     INVERT_X2_VS_X_DIR \
     X_DUAL_ENDSTOPS \
     INVERT_Y2_VS_Y_DIR \
-    Y_DUAL_ENDSTOPS
+    Y_DUAL_ENDSTOPS \
+    LCD_ENDSTOP_TEST
 
 echo "- Configured for Dual XY" >> README.md
