@@ -1,0 +1,11 @@
+# secondary Neopixels
+opt_enable \
+    NEOPIXEL2_SEPARATE \
+    NEOPIXEL2_STARTUP_TEST
+
+opt_set NEOPIXEL2_TYPE "NEO_RGB"
+opt_set NEOPIXEL2_PIN PB0
+opt_set NEOPIXEL2_PIXELS 8
+opt_set NEOPIXEL2_BRIGHTNESS 127
+
+echo "- Configured Neopixels" >> README.md

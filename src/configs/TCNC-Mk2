@@ -11,6 +11,7 @@ $CFGDIR/common/cnc-config
 $CFGDIR/boards/octopus
 $CFGDIR/accessories/tmc2209
 $CFGDIR/accessories/mini12864-lcd
+$CFGDIR/accessories/neopixels
 $CFGDIR/accessories/dual-drivers-on-xy
 $CFGDIR/boards/octopus_dual
 #$CFGDIR/accessories/max7219-debug

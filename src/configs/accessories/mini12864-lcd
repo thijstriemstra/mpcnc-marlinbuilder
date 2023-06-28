@@ -15,8 +15,5 @@ opt_set NEOPIXEL_TYPE "NEO_RGB"
 opt_set NEOPIXEL_PIXELS 3
 opt_set NEOPIXEL_BRIGHTNESS 255
 
-# secondary Neopixels
-
-
 echo "- Configured for MINI12864 display" >> README.md
 echo "- Configured for SDSUPPORT and SPEAKER" >> README.md
