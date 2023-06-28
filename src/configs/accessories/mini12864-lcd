@@ -7,13 +7,23 @@ opt_enable \
     NEOPIXEL_IS_SEQUENTIAL \
     LED_CONTROL_MENU \
     LED_COLOR_PRESETS \
-    LED_USER_PRESET_STARTUP
+    LED_USER_PRESET_STARTUP \
+    SHOW_TEMPERATURE_BELOW_ZERO
+
+# The timeout in ms to return to the status screen from sub-menus
+opt_set LCD_TIMEOUT_TO_STATUS 30000
+# Timeout (in min) before turning off the backlight
+opt_set LCD_BACKLIGHT_TIMEOUT_MINS 1
 
 # builtin Neopixel below rotary encoder
 opt_set NEOPIXEL_TYPE "NEO_RGB"
-#opt_set NEOPIXEL_PIN PE13
 opt_set NEOPIXEL_PIXELS 3
 opt_set NEOPIXEL_BRIGHTNESS 255
+# default color
+opt_set LED_USER_PRESET_RED 255
+opt_set LED_USER_PRESET_GREEN 255
+opt_set LED_USER_PRESET_BLUE 255
+opt_set LED_USER_PRESET_BRIGHTNESS 255
 
 echo "- Configured for MINI12864 display" >> README.md
 echo "- Configured for SDSUPPORT and SPEAKER" >> README.md
