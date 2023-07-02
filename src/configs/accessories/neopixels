@@ -15,4 +15,4 @@ opt_set NEO2_USER_PRESET_GREEN 255
 opt_set NEO2_USER_PRESET_BLUE 255
 opt_set NEO2_USER_PRESET_BRIGHTNESS 127
 
-echo "- Configured Neopixels" >> README.md
+echo "- Configured for 8 Neopixels" >> README.md
