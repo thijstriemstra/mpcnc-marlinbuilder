@@ -12,8 +12,6 @@ opt_enable \
 
 # The timeout in ms to return to the status screen from sub-menus
 opt_set LCD_TIMEOUT_TO_STATUS 30000
-# Timeout (in min) before turning off the backlight
-opt_set LCD_BACKLIGHT_TIMEOUT_MINS 1
 
 # builtin Neopixel below rotary encoder
 opt_set NEOPIXEL_TYPE "NEO_RGB"
