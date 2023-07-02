@@ -1,10 +1,9 @@
-
-### Preconfigured V1 Engineering firmware
+# Preconfigured MPCNC firmware
 
 This firmware has been automatically configured based on scripts from the
-[MarlinBuilder](https://github.com/V1EngineeringInc/MarlinBuilder) repository.
+[mpcnc-marlinbuilder](https://github.com/thijstriemstra/mpcnc-marlinbuilder) repository.
 
-### Configuration Notes
+## Configuration Notes
 
 (See the `git diff` for more detailed, exact changes from Marlin)
 

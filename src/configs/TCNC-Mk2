@@ -16,6 +16,8 @@ $CFGDIR/accessories/dual-drivers-on-xy
 $CFGDIR/boards/octopus_dual
 #$CFGDIR/accessories/max7219-debug
 
+opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK2\""
+
 # Printer's unique ID, used by some programs to differentiate between machines.
 opt_set MACHINE_UUID "\"e366c46c-2094-493a-b9a9-09bd6582e5f0\""
 
