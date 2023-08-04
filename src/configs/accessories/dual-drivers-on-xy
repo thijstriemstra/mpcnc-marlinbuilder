@@ -3,11 +3,14 @@ opt_set DEFAULT_MAX_ACCELERATION "{ 180, 180, 80 }"
 opt_set MANUAL_FEEDRATE "{ 50*60, 50*60, 4*60 }"
 opt_set AXIS_RELATIVE_MODES "{ false, false, false }"
 
+opt_set INVERT_X_DIR "true"
+opt_set INVERT_X2_DIR "true"
+opt_set INVERT_Y_DIR "false"
+opt_set INVERT_Y2_DIR "true"
+opt_set INVERT_Z_DIR "false"
 
-# Apparently the following "USE_*_PLUG settings are no longer needed and should be removed."
-# See https://github.com/MarlinFirmware/Marlin/blob/bugfix-2.1.x/Marlin/src/inc/Changes.h#L651
-#    USE_XMAX_PLUG \
-#    USE_YMAX_PLUG \
+opt_set X2_STOP_PIN PG11
+opt_set Y2_STOP_PIN PG12
 
 opt_enable \
     MIN_SOFTWARE_ENDSTOPS \
