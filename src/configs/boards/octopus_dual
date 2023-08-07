@@ -1,3 +1,18 @@
-opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 800 }"
+opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 400 }"
+opt_set DEFAULT_MAX_FEEDRATE "{ 50, 50, 20 }"
+opt_set DEFAULT_MAX_ACCELERATION "{ 180, 180, 80 }"
+opt_set MANUAL_FEEDRATE "{ 50*60, 50*60, 4*60 }"
+opt_set DEFAULT_ACCELERATION "180"
+opt_set DEFAULT_TRAVEL_ACCELERATION "180"
+opt_set JUNCTION_DEVIATION_MM "0.04"
+
+# Homing speeds (linear=mm/min, rotational=°/min)
+opt_set HOMING_FEEDRATE_MM_M "{ (35*60), (35*60), (4*60) }"
+
+# Backoff from endstops after first bump (linear=mm, rotational=°)
+opt_set HOMING_BUMP_MM "{ 5, 5, 5 }"
+
+# Re-Bump Speed Divisor (Divides the Homing Feedrate)
+opt_set HOMING_BUMP_DIVISOR "{ 2, 2, 4 }"
 
 echo "- Configured for Octopus dual" >> README.md

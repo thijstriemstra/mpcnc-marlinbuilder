@@ -1,16 +1,4 @@
-opt_set Z_MIN_ENDSTOP_HIT_STATE "HIGH"
-opt_set Z_MIN_PROBE_ENDSTOP_HIT_STATE "LOW"
-
-opt_set DEFAULT_MAX_FEEDRATE "{ 50, 50, 15, 25 }"
-opt_set DEFAULT_MAX_ACCELERATION "{ 180, 180, 80, 180 }"
-opt_set DEFAULT_ACCELERATION "180"
-opt_set DEFAULT_TRAVEL_ACCELERATION "180"
-opt_set JUNCTION_DEVIATION_MM "0.04"
-opt_set X_BED_SIZE "640"
-opt_set Y_BED_SIZE "520"
-opt_set HOMING_FEEDRATE_MM_M "{ (35*60), (35*60), (4*60) }"
-opt_set HOMING_BUMP_MM "{ 5, 5, 5 }"
-opt_set HOMING_BUMP_DIVISOR "{ 2, 2, 4 }"
+opt_set AXIS_RELATIVE_MODES "{ false, false, false }"
 opt_set DEFAULT_STEPPER_TIMEOUT_SEC "1200"
 opt_set DISABLE_IDLE_Z "false"
 opt_set SD_FINISHED_STEPPERRELEASE "false"
@@ -40,10 +28,6 @@ opt_enable \
     GCODE_MOTION_MODES \
     CUSTOM_MENU_MAIN \
     INDIVIDUAL_AXIS_HOMING_MENU
-
-opt_disable \
-    MIN_SOFTWARE_ENDSTOP_Z \
-    MAX_SOFTWARE_ENDSTOPS
 
 # Write some useful tidbits to the readme.
 echo "- Configured for CNC" >> README.md

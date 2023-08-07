@@ -4,10 +4,12 @@
 
 opt_set STRING_CONFIG_H_AUTHOR "\"(Collab, Thijs, ${V1_VERSION})\""
 
-# opt_set won't work, because it isn't in the configuration or configuration_adv.h, so I'm going to
+# opt_set won't work, because it isn't in the configuration or configuration_adv.h, so we're going to
 # just put it into the Configuration.h
 
 echo "#define SHORT_BUILD_VERSION \"${V1_VERSION} ${MARLIN_VERSION}\"" >> Marlin/Configuration.h
+echo "#define DIAG_JUMPERS_REMOVED" >> Marlin/Configuration.h
+echo "#define NO_AUTO_ASSIGN_WARNING" >> Marlin/Configuration.h
 
 opt_enable \
     DIRECT_PIN_CONTROL \

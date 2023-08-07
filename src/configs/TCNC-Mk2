@@ -21,8 +21,8 @@ opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK2\""
 # Printer's unique ID, used by some programs to differentiate between machines.
 opt_set MACHINE_UUID "\"e366c46c-2094-493a-b9a9-09bd6582e5f0\""
 
-opt_set DEFAULT_AXIS_STEPS_PER_UNIT "{ 200, 200, 400 }"
-opt_set DEFAULT_MAX_FEEDRATE "{ 50, 50, 4 }"
+opt_set X_BED_SIZE "640"
+opt_set Y_BED_SIZE "520"
 
 opt_enable \
     EMERGENCY_PARSER \
