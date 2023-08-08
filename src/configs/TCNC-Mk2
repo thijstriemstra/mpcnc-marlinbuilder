@@ -21,8 +21,15 @@ opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK2\""
 # Printer's unique ID, used by some programs to differentiate between machines.
 opt_set MACHINE_UUID "\"e366c46c-2094-493a-b9a9-09bd6582e5f0\""
 
+# The size of the machinable area
 opt_set X_BED_SIZE "640"
 opt_set Y_BED_SIZE "520"
+
+# Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
+opt_set X_MIN_POS 0
+opt_set Y_MIN_POS 0
+opt_set Z_MIN_POS 0
+opt_set Z_MAX_POS 81
 
 opt_enable \
     EMERGENCY_PARSER \
