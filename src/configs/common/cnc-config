@@ -1,7 +1,7 @@
 opt_set AXIS_RELATIVE_MODES "{ false, false, false }"
 opt_set SD_FINISHED_STEPPERRELEASE "false"
 
-opt_set CUSTOM_MENU_MAIN_TITLE "\"V1 Custom Menu\""
+opt_set CUSTOM_MENU_MAIN_TITLE "\"Custom Commands\""
 opt_set MAIN_MENU_ITEM_1_DESC "\"Reset All Coordinates\""
 opt_set MAIN_MENU_ITEM_1_GCODE "\"G92 X0 Y0 Z0\""
 opt_set MAIN_MENU_ITEM_2_DESC "\"Home Z Axis\""

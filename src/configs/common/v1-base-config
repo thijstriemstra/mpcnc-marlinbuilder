@@ -20,9 +20,12 @@ opt_enable \
 opt_disable \
     EVENT_GCODE_SD_ABORT
 
-# add custom boot and status screens
+# Add custom boot and status screens
 cp $CFGDIR/common/_Bootscreen.h Marlin/
 opt_enable SHOW_CUSTOM_BOOTSCREEN
+
+# Total duration to display the boot screen (ms)
+opt_set BOOTSCREEN_TIMEOUT 3000
 
 cp $CFGDIR/common/_Statusscreen.h Marlin/
 opt_enable CUSTOM_STATUS_SCREEN_IMAGE
