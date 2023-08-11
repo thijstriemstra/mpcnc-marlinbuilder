@@ -1,6 +1,4 @@
 opt_set AXIS_RELATIVE_MODES "{ false, false, false }"
-opt_set DEFAULT_STEPPER_TIMEOUT_SEC "1200"
-opt_set DISABLE_IDLE_Z "false"
 opt_set SD_FINISHED_STEPPERRELEASE "false"
 
 opt_set CUSTOM_MENU_MAIN_TITLE "\"V1 Custom Menu\""

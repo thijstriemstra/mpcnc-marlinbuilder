@@ -9,6 +9,7 @@ export V1_VERSION=${V1_VERSION}D
 $CFGDIR/common/v1-base-config
 $CFGDIR/common/cnc-config
 $CFGDIR/boards/octopus
+$CFGDIR/accessories/fans
 $CFGDIR/accessories/tmc2209
 $CFGDIR/accessories/mini12864-lcd
 $CFGDIR/accessories/neopixels
@@ -22,8 +23,8 @@ opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK2\""
 opt_set MACHINE_UUID "\"e366c46c-2094-493a-b9a9-09bd6582e5f0\""
 
 # The size of the machinable area
-opt_set X_BED_SIZE "640"
-opt_set Y_BED_SIZE "520"
+opt_set X_BED_SIZE "635"
+opt_set Y_BED_SIZE "515"
 
 # Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
 opt_set X_MIN_POS 0

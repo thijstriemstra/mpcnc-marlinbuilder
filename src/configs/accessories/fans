@@ -1,0 +1,16 @@
+# Controller fan that is always-on
+
+opt_enable \
+    USE_CONTROLLER_FAN \
+    CONTROLLER_FAN_EDITABLE \
+    CONTROLLER_FAN_MENU
+
+opt_set CONTROLLER_FAN_PIN FAN5_PIN
+opt_set CONTROLLERFAN_SPEED_MIN 0
+opt_set CONTROLLERFAN_SPEED_ACTIVE 255
+
+# Idle speed, used when motors are disabled (0-255). Set to 255 for always on.
+opt_set CONTROLLERFAN_SPEED_IDLE 255
+
+# Extra time to keep the fan running after disabling motors (seconds)
+opt_set CONTROLLERFAN_IDLE_TIME 60

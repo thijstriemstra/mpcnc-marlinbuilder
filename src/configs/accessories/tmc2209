@@ -1,3 +1,9 @@
+# Idle stepper shutdown (seconds)
+opt_set DEFAULT_STEPPER_TIMEOUT_SEC "1200"
+
+# shut down axis steppers after an idle period
+opt_set DISABLE_IDLE_Z "false"
+
 # TMC2209 drivers for all steppers
 opt_set X_DRIVER_TYPE "TMC2209"
 opt_set X2_DRIVER_TYPE "TMC2209"
@@ -18,12 +24,13 @@ opt_set Z_MICROSTEPS 16
 
 # Scales down the holding current from run current
 opt_set HOLD_MULTIPLIER 0.8
+
 # (mA) RMS current. Multiply by 1.414 for peak current.
-opt_set X_CURRENT  1050
-opt_set X2_CURRENT 1050
-opt_set Y_CURRENT  1050
-opt_set Y2_CURRENT 1050
-opt_set Z_CURRENT  1050
+opt_set X_CURRENT  1250
+opt_set X2_CURRENT 1250
+opt_set Y_CURRENT  1250
+opt_set Y2_CURRENT 1250
+opt_set Z_CURRENT  1250
 
 opt_set CHOPPER_TIMING CHOPPER_DEFAULT_24V
 
