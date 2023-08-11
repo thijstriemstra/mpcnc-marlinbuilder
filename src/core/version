@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Set up the custom version strings here.
-
 export V1_VERSION=${V1_VERSION:-$(git rev-parse --short HEAD)}
-export MARLIN_VERSION="${MARLIN_VERSION:-2.1.x}"
+export MARLIN_VERSION="${MARLIN_VERSION:-$(date +"%Y-%m-%d")}"
 export CONFIG_NAME="${CONFIG_NAME:-ConfigUnknown}"
 
 # Let's get a number for the version from the build, so we can try some basic maths.
