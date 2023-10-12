@@ -1,6 +1,6 @@
 opt_enable \
     SDSUPPORT \
-    BTT_MINI_12864_V1 \
+    BTT_MINI_12864 \
     SPEAKER \
     SOUND_MENU_ITEM \
     NEOPIXEL_LED \
