@@ -8,7 +8,11 @@ opt_enable \
     LED_CONTROL_MENU \
     LED_COLOR_PRESETS \
     LED_USER_PRESET_STARTUP \
-    SHOW_TEMPERATURE_BELOW_ZERO
+    SHOW_TEMPERATURE_BELOW_ZERO \
+    SET_PROGRESS_MANUALLY \
+    SHOW_PROGRESS_PERCENT \
+    SHOW_ELAPSED_TIME \
+    SHOW_REMAINING_TIME
 
 # The timeout in ms to return to the status screen from sub-menus
 opt_set LCD_TIMEOUT_TO_STATUS 30000
