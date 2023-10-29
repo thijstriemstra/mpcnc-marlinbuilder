@@ -25,7 +25,8 @@ opt_enable \
     CNC_COORDINATE_SYSTEMS \
     GCODE_MOTION_MODES \
     CUSTOM_MENU_MAIN \
-    INDIVIDUAL_AXIS_HOMING_MENU
+    INDIVIDUAL_AXIS_HOMING_MENU \
+    LARGE_MOVE_ITEMS
 
 # Write some useful tidbits to the readme.
 echo "- Configured for CNC" >> README.md
