@@ -12,7 +12,8 @@ opt_enable \
     SET_PROGRESS_MANUALLY \
     SHOW_PROGRESS_PERCENT \
     SHOW_ELAPSED_TIME \
-    SHOW_REMAINING_TIME
+    SHOW_REMAINING_TIME \
+    LCD_INFO_MENU
 
 # The timeout in ms to return to the status screen from sub-menus
 opt_set LCD_TIMEOUT_TO_STATUS 30000
