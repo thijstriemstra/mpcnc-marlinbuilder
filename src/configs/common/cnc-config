@@ -15,7 +15,9 @@ opt_set TEMP_SENSOR_BED 998
 # 0 extruders
 opt_set EXTRUDERS 0
 
-opt_set MANUAL_MOVE_DISTANCE_MM 400
+# MarlinUI "Move Axis" menu distances (mm). Comma-separated list.
+# Values are displayed as-defined, so always use plain numbers here.
+opt_set MANUAL_MOVE_DISTANCE_MM "100, 50, 25, 10, 1.0, 0.1"
 
 opt_enable \
     EEPROM_SETTINGS \
