@@ -7,13 +7,13 @@ opt_set DEFAULT_ACCELERATION "180"
 opt_set DEFAULT_TRAVEL_ACCELERATION "180"
 opt_set JUNCTION_DEVIATION_MM "0.04"
 
-# Homing speeds (linear=mm/min, rotational=°/min)
-opt_set HOMING_FEEDRATE_MM_M "{ (100*60), (100*60), (4*60) }"
+# Homing speeds (mm/min)
+opt_set HOMING_FEEDRATE_MM_M "{ (30*60), (30*60), (4*60) }"
 
-# Backoff from endstops after first bump (linear=mm, rotational=°)
+# Backoff from endstops after first bump (mm)
 opt_set HOMING_BUMP_MM "{ 5, 5, 2 }"
 
 # Re-Bump Speed Divisor (Divides the Homing Feedrate)
-opt_set HOMING_BUMP_DIVISOR "{ 2, 2, 4 }"
+opt_set HOMING_BUMP_DIVISOR "{ 3, 3, 4 }"
 
 echo "- Configured for Octopus dual" >> README.md
