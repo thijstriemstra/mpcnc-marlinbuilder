@@ -1,6 +1,6 @@
-# Marlin firmware for TCNC-Mk2
+# Marlin firmware for TCNC-Mk3
 
-This repository provides a preconfigured version of Marlin that is optimized for my MPCNC, called **TCNC-Mk2**.
+This repository provides a preconfigured version of Marlin that is optimized for my MPCNC, called **TCNC-Mk3**.
 
 ## Getting started
 

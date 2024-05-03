@@ -1,0 +1,40 @@
+#!/bin/bash
+
+set -e
+
+restore_configs
+
+export V1_VERSION=${V1_VERSION}D
+
+$CFGDIR/common/v1-base-config
+$CFGDIR/common/cnc-config
+$CFGDIR/boards/octopus
+$CFGDIR/accessories/fans
+$CFGDIR/accessories/tmc2209
+$CFGDIR/accessories/mini12864-lcd
+$CFGDIR/accessories/neopixels
+$CFGDIR/accessories/dual-drivers-on-xy
+$CFGDIR/boards/octopus_dual
+#$CFGDIR/accessories/max7219-debug
+
+opt_set CUSTOM_MACHINE_NAME "\"TCNC-MK3\""
+
+# Printer's unique ID, used by some programs to differentiate between machines.
+opt_set MACHINE_UUID "\"e366c46c-2094-493a-b9a9-09bd6582e5f0\""
+
+# The size of the machinable area
+opt_set X_BED_SIZE "635"
+opt_set Y_BED_SIZE "515"
+
+# Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
+opt_set X_MIN_POS 0
+opt_set Y_MIN_POS 0
+opt_set Z_MIN_POS 0
+opt_set Z_MAX_POS 81
+
+opt_enable \
+    EMERGENCY_PARSER \
+    REALTIME_REPORTING_COMMANDS \
+    HOST_ACTION_COMMANDS
+
+export PLATFORMIO_ENV=STM32F446ZE_btt
