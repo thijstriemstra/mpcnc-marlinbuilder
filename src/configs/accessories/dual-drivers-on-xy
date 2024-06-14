@@ -26,7 +26,12 @@ opt_enable \
     Y_DUAL_ENDSTOPS \
     LCD_ENDSTOP_TEST
 
-# Z Clearance between probe points (mm)
+# Z clearance between probe points (mm).
+# Set to 0 since we're only using a single probe point,
+# and consider the homed Z position to be Z0.
+# Without this change, Marlin will use a default clearance
+# of 5, and move the Z up by 5 after homing is done, which
+# we don't want for this machine.
 opt_set Z_CLEARANCE_BETWEEN_PROBES "0"
 
 echo "- Configured for Dual XY" >> README.md
