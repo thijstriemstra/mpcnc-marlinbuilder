@@ -26,4 +26,7 @@ opt_enable \
     Y_DUAL_ENDSTOPS \
     LCD_ENDSTOP_TEST
 
+# Z Clearance between probe points (mm)
+opt_set Z_CLEARANCE_BETWEEN_PROBES "0"
+
 echo "- Configured for Dual XY" >> README.md
