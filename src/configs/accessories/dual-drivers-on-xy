@@ -26,6 +26,11 @@ opt_enable \
     Y_DUAL_ENDSTOPS \
     LCD_ENDSTOP_TEST
 
+# Z clearance for deploy/stow (mm)
+# Z probes require clearance when deploying, stowing, and moving between
+# probe points to avoid hitting the bed and other hardware.
+opt_set Z_CLEARANCE_DEPLOY_PROBE "10"
+
 # Z clearance between probe points (mm).
 # Set to 0 since we're only using a single probe point,
 # and consider the homed Z position to be Z0.
