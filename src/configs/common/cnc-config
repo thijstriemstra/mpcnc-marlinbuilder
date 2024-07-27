@@ -9,8 +9,8 @@ opt_set MAIN_MENU_ITEM_2_GCODE "\"G28 Z\""
 opt_set MAIN_MENU_ITEM_3_DESC "\"Home X\&Y\""
 opt_set MAIN_MENU_ITEM_3_GCODE "\"G28 X Y\""
 
-# show fake temperature for non-existing bed
-opt_set TEMP_SENSOR_BED 998
+# no bed
+opt_set TEMP_SENSOR_BED 0
 
 # 0 extruders
 opt_set EXTRUDERS 0
