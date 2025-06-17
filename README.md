@@ -1,15 +1,6 @@
-# Marlin firmware for TCNC-Mk3
+# Marlin firmware for MPCNC machines
 
-This repository provides a preconfigured version of Marlin that is optimized for my MPCNC, called **TCNC-Mk3**.
+This repository provides preconfigured versions of Marlin that are optimized for my MPCNC machines:
 
-## Getting started
-
-If you are looking for the latest release, you should go and download it here:
-
-[Latest Release](https://github.com/V1EngineeringInc/MarlinBuilder/releases/latest)
-
-## Experts and Developers
-
-To build from source, read the [documentation](src#readme).
-
-Nightly builds are found in the "Actions" tab above.
+- **TCNC-Mk3**.
+- **Primo**

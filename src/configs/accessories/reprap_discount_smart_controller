@@ -6,5 +6,5 @@ opt_enable \
 
 opt_disable \
     SHOW_CUSTOM_BOOTSCREEN \
-	
+
 echo "- Configured for REPRAP_DISCOUNT_SMART_CONTROLLER" >> README.md

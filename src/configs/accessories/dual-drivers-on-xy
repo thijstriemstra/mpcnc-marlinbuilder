@@ -27,6 +27,11 @@ opt_enable \
     LCD_ENDSTOP_TEST
 
 # (mm) Height to move to after homing (if Z was homed)
+# Set to 0 since we're only using a single probe point,
+# and consider the homed Z position to be Z0.
+# Without this change, Marlin will move the Z up by 5
+# after homing is done, which we don't want for this machine.
+# See https://github.com/MarlinFirmware/Marlin/pull/27395#issuecomment-2424861381
 opt_set Z_AFTER_HOMING "0"
 
 echo "- Configured for Dual XY" >> README.md
