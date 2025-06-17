@@ -6,7 +6,7 @@ opt_set MAIN_MENU_ITEM_1_DESC "\"Reset All Coordinates\""
 opt_set MAIN_MENU_ITEM_1_GCODE "\"G92 X0 Y0 Z0\""
 opt_set MAIN_MENU_ITEM_2_DESC "\"Home Z Axis\""
 opt_set MAIN_MENU_ITEM_2_GCODE "\"G28 Z\""
-opt_set MAIN_MENU_ITEM_3_DESC "\"Home X\&Y\""
+opt_set MAIN_MENU_ITEM_3_DESC "\"Home X&Y\""
 opt_set MAIN_MENU_ITEM_3_GCODE "\"G28 X Y\""
 
 # no bed
